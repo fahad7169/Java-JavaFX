@@ -1,0 +1,18 @@
+Button{
+     -fx-background-radius: 100px;
+     -fx-border-radius: 100px;
+       -fx-background-insets: 0px;
+       -fx-padding: 5px;
+       -fx-background-color: #353A56;
+
+}
+/*Button:pressed{
+     -fx-background-color: rgba(255, 255, 255, 0.2);
+}*/
+#songLabel{
+    -fx-font-size: 20px;
+}
+.root{
+
+-fx-background-color: #353A56;
+}

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="rootPane" prefHeight="500.0" prefWidth="400.0" styleClass="root" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.mp3player.MP3Player">
+    <children>
+        <Label fx:id="songLabel" alignment="CENTER" layoutX="7.0" prefHeight="79.0" prefWidth="355.0" text="Mp3Player" textFill="WHITE">
+            <font>
+                <Font size="12.0" />
+            </font>
+        </Label>
+        <Button fx:id="previousButton" contentDisplay="GRAPHIC_ONLY" layoutX="76.0" layoutY="387.0" mnemonicParsing="false" onAction="#previousMedia" prefHeight="31.0" prefWidth="53.0" text="PREVIOUS">
+            <font>
+                <Font size="12.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="51.0" fitWidth="57.0" layoutX="152.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@previous.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+        <Button fx:id="nextButton" contentDisplay="GRAPHIC_ONLY" layoutX="279.0" layoutY="388.0" mnemonicParsing="false" onAction="#nextMedia" prefHeight="36.0" prefWidth="36.0" text="NEXT">
+            <font>
+                <Font size="16.0" />
+            </font>
+            <graphic>
+                <ImageView fitHeight="50.0" fitWidth="53.0" layoutX="269.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@forward.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+        </Button>
+      <Label fx:id="timeLabel" layoutX="137.0" layoutY="242.0" text="Label" />
+      <ImageView fx:id="songImage" fitHeight="285.0" fitWidth="343.0" layoutX="63.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cover1.jpg" />
+         </image>
+      </ImageView>
+        <Button fx:id="playButton" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" graphicTextGap="0.0" layoutX="172.0" layoutY="383.0" mnemonicParsing="false" onAction="#playPauseMedia" prefHeight="70.0" prefWidth="78.0">
+            <graphic>
+                <ImageView fx:id="pausePlayImage" fitHeight="57.0" fitWidth="61.0" layoutX="269.0" layoutY="394.0" pickOnBounds="true" preserveRatio="true">
+                    <image>
+                        <Image url="@img_2.png" />
+                    </image>
+                </ImageView>
+            </graphic>
+         <font>
+            <Font size="1.0" />
+         </font>
+        </Button>
+      <Label fx:id="totalTime" layoutX="337.0" layoutY="356.0" prefHeight="26.0" prefWidth="38.0" text="Label" textFill="WHITE" />
+
+
+
+
+        
+
+    </children>
+</AnchorPane>
